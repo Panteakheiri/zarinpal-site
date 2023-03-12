@@ -1,0 +1,38 @@
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const crossIcon = document.querySelector('.cross-icon');
+const showMoreMenu = document.querySelector('#show-more-menu');
+const showProductMenu = document.querySelector('#show-product-menu');
+const productmenu = document.querySelector('.product-menu')
+const moremore = document.querySelector('.more-more')
+
+hamburgerIcon.addEventListener('click', function () {
+  console.log(hamburgerMenu.style.transform);
+  hamburgerMenu.classList.add('show-hamburger-menu');
+});
+
+crossIcon.addEventListener('click', function () {
+  hamburgerMenu.classList.remove('show-hamburger-menu');
+});
+
+showMoreMenu.addEventListener('mouseenter', function (e) {
+  const ul = e.target.childNodes[5];
+  ul.style.animation = 'showUp 0.35s 1';
+  ul.style.display = 'block';
+});
+
+moremore.addEventListener('mouseleave', function (e) {
+  moremore.style.display = 'none';
+});
+
+showProductMenu.addEventListener('mouseenter', function (e) {
+  const div = e.target.childNodes[5];
+  div.style.animation = 'showUp 0.35s 1';
+  div.style.display = 'flex';
+});
+
+productmenu.addEventListener('mouseleave', function (e) { 
+  productmenu.style.display = 'none';
+});
+
+

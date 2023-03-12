@@ -1,0 +1,1415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'iranyekanwebregular' , Arial, Helvetica, sans-serif ;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin:17px auto;
+    padding: 16px 5px 10px;
+    background-color: rgba(255, 255, 255, 0.719);
+    position: sticky;
+    top: 0;
+    backdrop-filter:blur(10px);
+    transition: all .3s ease;
+    z-index: 100;
+    border-bottom: 1px solid rgb(228, 227, 227);
+
+}
+.logo-img {
+    
+    margin-top: 10px;
+    margin-right: 28px;
+}
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+    font-size:13px ;
+    
+    
+}
+.navbar-menu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+      
+}
+
+.hamburger-icon {
+    display: none;
+    width: 27px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.navbar-menu li img {
+    width: 7px;
+    margin-right: 5px;
+   
+}
+.navbar-menu > li:last-child a {
+    font-family:YekanBakhBold ;
+    background-color: rgb(236, 243, 248);
+    color: #1b3664;
+    padding: 11px 27px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 26px;
+
+}
+
+.navbar-menu > li:last-child a:hover {
+    background-color: rgb(253, 245, 222);
+}
+
+.cross-icon {
+    width: 100%;
+    text-align: left;
+    padding: 27px 0px;
+
+}
+.cross-icon img {
+    width: 20px;
+    margin-left: 27px;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    font-family: iranyekanwebmedium;
+    transform: translateY(-110%);
+    
+}
+.hamburger-menu-items {
+    padding: 10px 27px;
+}
+.hamburger-menu-items li {
+    list-style: none;
+}
+.hamburger-menu-items a {
+    text-decoration: none;
+    color:rgb(0, 0, 0) ;
+    padding: 7px 0;
+    display: inline-block;
+}
+.line-between {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(214, 212, 212);
+    margin: 7px 0;
+}
+.my-zarinpal {
+    background-color: rgb(241, 239, 239);
+    height: 60px;
+    align-items: center;
+    
+    display: flex;
+}
+.my-zarinpal a {
+    text-decoration: none;
+    color: #183d83;
+    margin-right:60px ;
+    font-size: 13px;
+}
+
+.my-zarinpal img {
+    width: 18px;
+    margin-right: 3px;
+}
+.show-hamburger-menu {
+    animation:fadeInDown 0.35s forwards;
+}
+
+#show-product-menu {
+    position: relative;
+}
+
+.product-menu {
+    position: absolute;
+    top: 0;
+    left: -140px;
+    background-color: #fff;
+    border-top: 5px solid rgb(245, 213, 153);
+    border-radius: 12px;
+    display: none;
+    justify-content: flex-start;
+    width: 372px;
+    margin-top: 32px;
+    padding-top: 5px;
+    
+}
+
+.product-menu a p:first-child {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.product-menu a p:last-child {
+    color: black;
+    font-size: 0.7rem;
+}
+
+.product-menu a {
+    display: block;
+    padding: 10px;
+    margin: 10px; 
+    border-radius: 5px;
+}
+
+.product-menu a:hover {
+    background-color:rgb(236, 243, 248) ;
+}
+
+#show-more-menu {
+    position: relative;
+}
+
+#show-more-menu ul {
+    background-color: #fff;
+    width: 125px;
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    left: -35px;
+    border-top: 5px solid rgb(245, 213, 153);
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 32px;
+    display: none;
+    
+    
+}
+
+#show-more-menu li {
+    color: black;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+#show-more-menu li:hover {
+    background-color: rgb(236, 243, 248);
+}
+
+.banner {
+    width: 1178px;
+    background: linear-gradient(135deg, #21254e, #2b4a83) ;
+    margin: 10px auto;
+    border-radius: 23px;
+    padding: 124px 70px 100px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.banner-text h3 {
+    font-size: 2rem;
+    font-family:YekanBakhHeavy ;
+    color: #fff;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+}
+
+.banner-button {
+    display: flex;
+    margin-top:70px ;
+    margin-bottom: 60px;
+}
+
+.register {
+    background-color: rgb(255, 230, 0);
+    padding: 6px 13px;
+    border-radius: 11px;
+    font-family:YekanBakhBold ;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.login {
+    background-color: #415d91;
+    font-family:YekanBakhBold ;
+    color: #fff;
+    border-radius: 11px;
+    padding: 6px 13px;
+    text-decoration: none;
+}
+
+.go-down {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 49px;
+
+}
+.go-down div {
+    background: url(../images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+    
+
+}
+
+.go-down img {
+    width: 15px;
+    position: relative;
+    bottom: 60px;
+    
+}
+
+.banner-image {
+    width: 2000px;
+}
+
+.online-payment {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 40px 100px 10px;
+}
+
+.payment-image {
+    width: 500px;
+    height: 650px;
+}
+
+.payment-text {
+    margin-top: 50px;
+    margin-right: 130px;
+    
+}
+.payment-text h2 {
+    font-family: YekanBakhMedium;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+}
+
+.payment-text h3 {
+    font-family:YekanBakhHeavy ;
+    font-size: 2rem;
+    color: black;
+}
+
+.payment-text p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-left: 90px;
+    margin-top: 15px;
+    font-family:YekanBakhMedium ;
+    line-height: 37px;
+    color: #303030;
+    border-bottom: 1px solid rgb(223, 220, 220);
+    padding-bottom: 20px;
+}
+
+.payment-link {
+    margin-top: 40px;
+    display: flex;
+    
+    
+}
+
+.payment-link .first-button {
+    background-color:rgb(255, 217, 0) ;
+    padding: 7px 11px ;
+    text-decoration: none;
+    color: #000;
+    font-family:YekanBakhMedium ;
+    border-radius: 10px;
+    
+}
+
+.payment-link .second-button {
+    background-color:rgb(236, 243, 248) ;
+    color: #1c185a;
+    text-decoration: none;
+    font-family:YekanBakhMedium ;
+    padding:7px 11px ;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.payment-link img {
+    text-align: center;
+    width: 20px;
+}
+
+.zarin-link {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: -120px  200px 10px 15px;
+}
+
+.zarin-link-text {
+    width: 530px;
+    margin-left: 20px;
+}
+
+.zarin-link-text h2 {
+    font-family: YekanBakhMedium;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+}
+
+.zarin-link-text h3 {
+    font-family:YekanBakhHeavy ;
+    font-size: 2rem;
+    color: black;
+}
+
+.zarin-link-text p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 15px;
+    font-family:YekanBakhMedium ;
+    line-height: 37px;
+    color: #303030;
+    border-bottom: 1px solid rgb(223, 220, 220);
+    padding-bottom: 20px;
+}
+
+.zarin-link-button {
+    margin-top: 40px;
+    display: flex;
+    
+    
+}
+
+.zarin-link-button .first-button {
+    background-color:rgb(255, 217, 0) ;
+    padding: 7px 11px ;
+    text-decoration: none;
+    color: #000;
+    font-family:YekanBakhMedium ;
+    border-radius: 10px;
+    
+}
+
+.zarin-link-button .second-button {
+    background-color:rgb(236, 243, 248) ;
+    color: #1c185a;
+    text-decoration: none;
+    font-family:YekanBakhMedium ;
+    padding:7px 11px ;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.zarin-link-button img {
+    text-align: center;
+    width: 20px;
+}
+.zarin-link-image {
+    width: 750px;
+    height: 900px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -40px;
+}
+
+.zarin-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: -230px 190px 10px 75px;
+}
+
+.zarin-cart-text {
+    margin-right: 170px;
+    margin-top: -12px;
+    margin-left: 80px;
+}
+
+.zarin-cart-text h2 {
+    font-family: YekanBakhMedium;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+}
+
+.zarin-cart-text h3 {
+    font-family:YekanBakhHeavy ;
+    font-size: 2rem;
+    color: black;
+}
+
+.zarin-cart-text p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 15px;
+    font-family:YekanBakhMedium ;
+    line-height: 37px;
+    color: #303030;
+    border-bottom: 1px solid rgb(223, 220, 220);
+    padding-bottom: 20px;
+}
+
+.zarin-cart-button {
+    margin-top: 40px;
+    display: flex;
+    
+    
+}
+
+.zarin-cart-button .first-button {
+    background-color:rgb(255, 217, 0) ;
+    padding: 7px 11px ;
+    text-decoration: none;
+    color: #000;
+    font-family:YekanBakhMedium ;
+    border-radius: 10px;
+    
+}
+
+.zarin-cart-button .second-button {
+    background-color:rgb(236, 243, 248) ;
+    color: #1c185a;
+    text-decoration: none;
+    font-family:YekanBakhMedium ;
+    padding:7px 11px ;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.zarin-cart-button img {
+    text-align: center;
+    width: 20px;
+}
+
+.tashim {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px 180px 20px 170px;
+}
+
+.tashim-text {
+    width: 500px;
+}
+
+.tashim-text h2 {
+    font-family: YekanBakhMedium;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+}
+
+.tashim-text h3 {
+    font-family:YekanBakhHeavy ;
+    font-size: 2rem;
+    color: black;
+}
+
+.tashim-text p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 15px;
+    font-family:YekanBakhMedium ;
+    line-height: 37px;
+    color: #303030;
+    border-bottom: 1px solid rgb(223, 220, 220);
+    padding-bottom: 20px;
+}
+
+.tashim-button {
+    margin-top: 40px;
+    display: flex;
+    
+    
+}
+
+.tashim-button .first-button {
+    background-color:rgb(255, 217, 0) ;
+    padding: 7px 11px ;
+    text-decoration: none;
+    color: #000;
+    font-family:YekanBakhMedium ;
+    border-radius: 10px;
+    
+}
+
+.tashim-button .second-button {
+    background-color:rgb(236, 243, 248) ;
+    color: #1c185a;
+    text-decoration: none;
+    font-family:YekanBakhMedium ;
+    padding:7px 11px ;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.tashim-button img {
+    text-align: center;
+    width: 20px;
+}
+
+.tashim-image {
+    background: url(../images/payout.svg);
+    width: 800px;
+    height: 500px;
+}
+
+.zarin-plus {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 170px 20px 160px;
+    
+}
+
+.zarin-plus-text {
+    width: 500px;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
+.zarin-plus-text h2 {
+    font-family: YekanBakhMedium;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+}
+
+.zarin-plus-text h3 {
+    font-family:YekanBakhHeavy ;
+    font-size: 2rem;
+    color: black;
+}
+
+.zarin-plus-text p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 15px;
+    font-family:YekanBakhMedium ;
+    line-height: 37px;
+    color: #303030;
+    border-bottom: 1px solid rgb(223, 220, 220);
+    padding-bottom: 20px;
+}
+
+.zarin-plus-button {
+    margin-top: 40px;
+    display: flex; 
+}
+
+.zarin-plus-button .first-button {
+    background-color:rgb(255, 217, 0) ;
+    padding: 7px 11px ;
+    text-decoration: none;
+    color: #000;
+    font-family:YekanBakhMedium ;
+    border-radius: 10px;
+    
+}
+
+.zarin-plus-button .second-button {
+    background-color:rgb(236, 243, 248) ;
+    color: #1c185a;
+    text-decoration: none;
+    font-family:YekanBakhMedium ;
+    padding:7px 11px ;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.zarin-plus-button img {
+    text-align: center;
+    width: 20px;
+}
+.chess {
+    display: flex;
+    width: 1170px;
+    margin: 100px auto;
+    padding: 40px 0;
+}
+.definition {
+    width: 40%;
+}
+.definition h3 {
+    font-size: 2rem;
+    font-family:YekanBakhHeavy ;
+}
+.definition p {
+    font-family:YekanBakhMedium ;
+    font-size: 15.5px;
+    color: #303030;
+    padding-top: 40px;
+    line-height: 40px;
+    text-align: justify;
+    padding-left: 80px;
+}
+.titr img {
+    width: 60px;
+    height: 60px;
+}
+.titr {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.titr h3 {
+    font-family: YekanBakhheavy;
+    font-size: 1.4rem;
+    padding-right: 26px;
+}
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 65%;
+}
+
+.first-item, .second-item, .third-item, .fourth-item p {
+    font-size: 15px;
+    font-family:YekanBakhbold ;
+    color: #303030;
+    text-align: justify; 
+    line-height: 40px;
+}
+.first-item, .second-item, .third-item, .fourth-item {
+    width: auto;
+    padding: 30px 20px;
+    
+}
+
+.first-item {
+    border-left: 1px solid rgb(219, 219, 219);
+}
+.second-item {
+    border-bottom:1px solid rgb(219, 219, 219) ;
+}
+.third-item {
+    border-top:1px solid rgb(219, 219, 219) ;
+}
+.fourth-item {
+    border-right: 1px solid rgb(219, 219, 219);
+}
+
+.kadr {
+    width: 1130px;
+    border: 1px solid rgb(180, 179, 179);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    padding: 50px 10px ;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+.black {
+    font-size: 1.7rem;
+    font-family: yekanbakhheavy;
+    font-weight: 900;
+    color: #303030;
+    margin-bottom: 10px;
+}
+.gray {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 25px;
+}
+.start {
+    background: rgb(255, 230, 0);
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-family:YekanBakhBold ;
+}
+.support {
+    width: 1100px;
+    background: #fcecdd;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px 30px;
+    align-items: center;
+    border-radius: 30px;
+}
+.support-number {
+    font-family:YekanBakhHeavy ;
+    font-size: 1.5rem;
+}
+#line {
+    margin: 0 20px;
+}
+#number {
+    color: #183d83;
+    margin-right: 10px;
+}
+.support-request {
+    font-family:YekanBakhBold ;
+    color: #183d83;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.support-request img {
+    height: 20px;
+    color: #183d83;
+    margin-right: 10px;
+    
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 60px auto;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-right: 10px;
+    width: calc(100% - 300px);
+}
+.footer-links ul {
+    list-style: none;
+}
+.footer-links p {
+    font-family: YekanBakhHeavy;
+    font-size: 1.3rem;
+    color: #303030;
+    margin-bottom: 5px;
+}
+.footer-links a {
+    text-decoration: none;
+    font-family:iranyekanwebmedium ;
+    font-size: 1rem;
+    color: #303030;
+    display: inline-block;
+    margin-top: 20px;
+}
+.social-media {
+    width: 300px;
+}
+.social-media p {
+    font-family: YekanBakhHeavy;
+    font-size: 1.3rem;
+    color: #303030;
+}
+.sm-links {
+    display: flex;
+    margin-top: 20px;
+}
+.social-media .sm-links a {
+    width: 45px;
+    height: 45px;
+    background: #e6f7fc;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trust-elec {
+    background: none;
+    margin-top: 20px;
+    margin-right: 90px;
+    width: 80px;
+    height: 80px;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+@media (max-width:1200px) {
+    header {
+        width: 930px;
+        padding-bottom: 30px;
+    }
+    .banner {
+        width: 938px;
+        padding: 50px 30px 85px 50px;
+    }
+    .banner-image {
+        width: 2000px;
+        margin-top: 40px;
+    }
+    .payment-text {
+        margin-right: 20px;
+        margin-left: 40px;
+        
+    }
+    .payment-text p {
+        margin-left: 40px;
+    }
+    .payment-text h3 {
+        font-size: 1.7rem;
+    }
+    .online-payment {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .zarin-link {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    .zarin-link-image {
+        margin-left: 40px;
+    }
+    .zarin-link-text {
+        margin-right: 40px;
+    }
+
+    .zarin-cart {
+        margin-top: -300px;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+    .zarin-cart-image {
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+    .zarin-cart-text {
+        margin-right: 40px;
+    }
+    .tashim {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .tashim-image {
+        margin-left: 40px;
+    }
+    .tashim-text {
+        margin-right: 40px;
+    }
+    .zarin-plus-image {
+        margin-right: -30px;
+        margin-left: 40px;
+    }
+    .zarin-plus-text {
+        margin-left: -30px;
+        margin-top: 1px;
+    }
+    .chess {
+        flex-direction: column;
+        width: auto;
+    }
+    .definition {
+        width: 90%;
+        margin: 0 70px;
+    }
+    .definition p {
+        margin-right: 40px;
+    }
+    .definition h3 {
+        color: #303030;
+        font-size: 1.8rem;
+        margin-right: 40px;
+    }
+    .items {
+        width: 70%;
+        margin: 30px auto;
+    }
+    .first-item {
+        border-left: none;
+    }
+    .second-item { 
+        border-bottom: none;
+    }
+    .third-item {
+        border-top: none;
+    }
+    .fourth-item {
+        border-right: none;
+    }
+    .kadr {
+        width: calc(100% - 8rem);
+    }
+    .support {
+        width: calc(100% - 10rem)
+    }
+    footer {
+        width: calc(100% - 8rem);
+    }
+}
+
+@media (max-width:990px) {
+    header {
+        width: auto;
+        margin: 0 18px;
+    }
+    .navbar-menu > li:last-child a {
+        display: none;
+    }
+    .banner-image {
+        display: none;
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+   
+    .banner-button {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .banner {
+        padding: 40px 30px 40px 30px;
+        width: auto;
+        margin-left: 18px;
+        margin-right: 18px;
+        
+    }
+    .online-payment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin-top: -20px;
+    }
+    .payment-text {
+        margin-top: -200px;
+        
+    }
+    .payment-text h3 {
+        font-size: 1.6rem;
+        color: #303030;
+    }
+    .payment-text p {
+        margin-left: 10px;
+        font-size: .9rem;
+    }
+    .zarin-link {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .zarin-link-text {
+        width: auto;
+    }
+    .zarin-link-text h3 {
+        font-size: 1.6rem;
+    }
+    .zarin-link-button {
+        margin-bottom: 80px;
+    }
+    .zarin-link-image {
+        margin: auto;
+        width: 550px;
+        height: 300px;
+    }
+    .zarin-cart {
+        margin-top: 200px;
+        flex-direction: column;
+    }
+    .zarin-cart-image {
+        margin: auto;
+    }
+    .zarin-cart-text {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .zarin-cart-text h3 {
+        font-size: 1.6rem;
+    }
+    .tashim {
+        flex-direction: column;
+    }
+    .tashim-text {
+        width: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .tashim-text h3 {
+        font-size: 1.6rem;
+    }
+    .tashim-image {
+        margin-right: -150px;
+        margin-top: 60px;
+        /* background: none; */
+    }
+    .zarin-plus {
+        flex-direction: column;
+        margin: 0 30px;
+    }
+    .zarin-plus-image {
+        margin:auto ;
+    }
+    .zarin-plus-text {
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 2px;
+    }
+    
+    .zarin-plus-text h3 {
+        font-size: 1.6rem;
+    }
+    .chess {
+        margin-top: 10px;
+    }
+    .definition {
+        width: auto;
+        margin:10px 2px;
+    }
+    .definition p {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-left: 0;
+        
+    }
+    .definition h3 {
+        font-size: 1.6rem;
+        margin-right: 30px;
+        margin-bottom: -20px;
+    }
+    .support-number, .support-request {
+        font-size: 1.1rem;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer .footer-links {
+        width: 100%;
+    }
+    .footer-links div {
+        margin-left: 20px;
+    }
+    footer .social-media {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        width: auto;
+        padding: 5px 0px;
+        margin: 0px 0px;
+    }
+    .logo-img{
+        margin-right: 30px;
+    }
+    .hamburger-icon {
+        display: block;
+        
+    }
+    .navbar-menu li {
+        display: none;
+    }
+    .online-payment {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .payment-text h2,h3 {
+        text-align: center;
+    }
+    .payment-link {
+        justify-content: center;
+    }
+    .zarin-link {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .zarin-link-text h2,h3 {
+        text-align: center;
+    }
+    .zarin-link-text p {
+        font-size: .9rem;
+        
+    }
+    .zarin-link-button {
+        justify-content: center;
+    }
+    .zarin-link-image {
+        width: 450px;
+        height: 280px;
+    }
+    .zarin-cart {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .zarin-cart-text {
+        margin-top: 50px;
+    }
+    .zarin-cart-text h2 {
+        text-align: center;
+    }
+    .zarin-cart-text p {
+        font-size: .9rem;
+    }
+    .zarin-cart-button {
+        justify-content: center;
+    }
+    .tashim {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .tashim-text h2,h3 {
+        text-align: center;
+    }
+    .tashim-text p {
+        font-size: .9rem;
+    }
+    .tashim-button {
+        justify-content: center;
+    }
+    .tashim-image {
+        display: none;
+    }
+    .zarin-plus-image {
+        display: none;
+    }
+    .zarin-plus {
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .zarin-plus-text h2,h3 {
+        text-align: center;
+    }
+    .zarin-plus-text p {
+        font-size: .9rem;
+    }
+    .zarin-plus-button {
+        justify-content: center;
+    }
+    .chess {
+        margin: 70px auto;
+        text-align: center;
+    }
+    .definition h3 {
+        margin: 0 auto;
+    }
+    .definition p {
+        padding: 40px 40px;
+    }
+    .first-item {
+        margin-top: 10px;
+    }
+    .items {
+        width: auto;
+        margin: 20px ;
+        
+    }
+    .first-item, .second-item {
+        padding-bottom: 3px;
+    }
+    .items .titr h3 {
+        padding-right: 10px;
+    }
+    .kadr {
+        width: calc(100% - 2rem);
+    }
+    .black {
+        font-size: 1.4rem;
+    }
+    .gray {
+        font-size: 1rem;
+    }
+    .support {
+        flex-direction: column;
+        align-items: flex-start;
+        background: none;
+    }
+    .support-request {
+        background: #fcecdd;
+        padding: 5px 20px;
+        border-radius:20px ;
+        margin-top: 20px;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(2,1fr); 
+        
+    }
+    .footer-links div {
+        margin-top: 20px;
+    }
+
+}
+@media (max-width:580px) {
+    .banner {
+         padding: 60px 40px; 
+         margin-left:7px ;
+         margin-right: 7px;      
+    }
+    .banner-text h3 {
+        font-size: 1.3rem;
+        text-align: right;
+        line-height: 45px;
+    }
+    .banner-text p {
+        font-size: 15px;
+        text-align: center;
+        font-family:YekanBakhMedium ;
+    }
+    .payment-image {
+        display: none;
+        
+    }
+    .online-payment {
+        margin-top:200px;
+        margin-right:40px;
+        margin-left: 20px;
+
+    }
+    .payment-text {
+        /* margin-right: 30px; */
+    }
+    .payment-text h3 {
+        font-size: 1.4rem;
+    }
+    .zarin-link-text h3 {
+        font-size: 1.4rem;
+    }
+    .zarin-link-text {
+        margin-right: 20px;
+    }
+    
+    .zarin-link-image {
+        display: none;
+    }
+    .zarin-cart-image {
+        display: none;
+    }
+    .zarin-cart-text h3 {
+        font-size: 1.4rem;
+    }
+    .zarin-cart-text {
+        margin-top: -230px;
+    }
+    .tashim-text h3 {
+        font-size: 1.4rem;
+    }
+    .chess {
+        margin: 60px auto;
+        text-align: center;
+    }
+    .definition h3 {
+        font-size:1.45rem ;
+        margin-bottom: -10px auto;
+    }
+    .items {
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .titr h3 {
+        font-size: 1.2rem;
+    }
+    .items p {
+        line-height: 34px;
+    }
+    .kadr {
+        height: 200px;
+        width: calc(100% - 12px);
+    }
+    .black {
+        font-size: 1.2rem;
+    }
+    .gray {
+        font-size: .9rem;
+        font-weight: bold;
+    }
+    .border-top {
+        width: 100%;
+        height: .5px;
+        background-color: rgb(214, 214, 214);
+    }
+    #line {
+        display: none; 
+    }
+    .support-number {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .support-number div {
+        margin-top: 15px;
+    }
+    .support-number, .support-request {
+       font-size: 1rem;
+    }
+    .support-request {
+        margin-right: -5px;
+    }
+    
+    
+    .footer-links a{
+        font-size: .8rem;
+        margin-top: 7px;
+    }
+    .footer-links p {
+        font-size: .9rem;
+    }
+    .social-media {
+        width: 100%;
+    }
+
+    .social-media p{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .social-media .sm-links a {
+        width: 35px;
+        height: 35px;
+    }
+    .social-media .sm-links {
+        justify-content: center;
+    }
+    .social-media .sm-links img {
+        width: 20px;
+    }
+    .social-media p {
+        font-size: .8rem;
+        text-align: center;
+    }
+    .social-media .trust-elec {
+        margin: 20px  130px;
+    }
+}
